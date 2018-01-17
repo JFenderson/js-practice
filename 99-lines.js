@@ -47,4 +47,16 @@ JANE:
 Add Comment Collapse
 */
 
+var friends = ['Joseph','Book','Tori','Aj','Shock'];
+var text = ['lines of code in the file','line of code;']
+var text2 = ['strickes one out, clears it all out','lines of code in the file']
+var i, j;
+function myFunc(){
+for(i = 0; i < 100; i++){
+    text += i + 'lines of code in the file' + i + 'line of code;'
+    }
+    console.log()
+    
+}
 
+text += i + 'lines of code in the file' + i + 'line of code;' + friends[i] + 'strickes one out, clears it all out' + j + 'lines of code in the file'
