@@ -105,3 +105,30 @@ My Skills:
 
 P.S. One of those skills is not true
 */
+const name = 'Joseph Fenderson';
+console.log(name.toUpperCase())
+
+console.log('Career: Full Stack Engineer / Instructor')
+
+console.log('Description: I like turtles')
+
+function displayPosition(name, title, description) {
+    console.log(
+        `* ${title} at ${name}
+        - ${description}`
+    );
+}
+
+displayPosition('playti','software engineer','hdiohdio');
+
+function displaySkill(name,coolSkill){
+    if(coolSkill === true){
+        console.log(`check it: ${name}`)
+    }else {
+        console.log(`* ${Skill}`)
+    }
+}
+    console.log(`My Skills:`)
+
+    displaySkill(`playing pool`, true);
+    displaySkill(`swimming`,false)
