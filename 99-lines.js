@@ -45,39 +45,21 @@ JANE:
 1 line of code in the file, 1 line of code; Jane strikes one out, clears it all out, no more lines of code in the file
 ``````````````````````````````
 Add Comment Collapse
+
 */
 
 var friends = [' Joseph ',' Book ',' Tori ','Aj ',' Shock '];
-var text = [' lines of code in the file, ',' line of code;']
-var text2 = [' strickes one out, clears it all out ',' lines of code in the file']
-
-
-
-
-/*for(i = 99; i > 0; i--){
-    for(j = 0; j < friends.length; j++){
-        if(i > 1 && i < 99)
-            var sum = i - 1
-        
-        else if(sum = 0);{
-            k = 'no more'
-        }
-        console.log((i) + text[0] + (i) + text[1] + friends[j] + text2[0] + (i) + text2[1]);
-        };
-    };
-};
-
-myFunc()*/
 
 for(i = 0; i < friends.length; i++){
+    console.log(friends[i])
     for(j = 99; j > 0; j--) {
         if (j === 2) {
             console.log(`${j} lines of code in the file, ${j} lines of code; ${friends[i]} strikes one out, clears it all out, ${j - 1} line of code in the file`);
-        else if(j === 1) {
-            console.log(`${j} lines of code in the file, ${j} lines of code; ${friends[i]} strikes one out, clears it all out, ${j - 1} line of code in the file`)
-        }else {
+        }else if(j === 1) {
+            console.log(`${j} lines of code in the file, ${j} lines of code; ${friends[i]} strikes one out, clears it all out, no more lines of code in the file`)
+        }else{
             console.log(`${j} lines of code in the file, ${j} lines of code; ${friends[i]} strikes one out, clears it all out, ${j - 1} line of code in the file`)
         }
         }
     }
-}
+
