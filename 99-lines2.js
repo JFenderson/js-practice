@@ -82,30 +82,55 @@
 
 
 
+var wrapper = document.getElementsByTagName("p");
 
 
 document.addEventListener('DOMContentLoaded', function(){
-    console.log("dom content loaded");
 
 
-var friends = [' Joseph ',' Book ',' Tori ','Aj ',' Shock '];
-
-
-document.getElementById("MyBtn").addEventListener("click",() => {
+var x = document.getElementById("myBtn");
+x.addEventListener('click', () =>{
+// x.addEventListener ("click", display);
+//x.addEventListener ("click", lines(friends), true);
+// function display() {
+//     let text = ["Joseph", "Book", "Tori", "AJ", "Shock"];
+//     text.forEach(function(bl){
+//         var div = document.createElement("div");
+//         div.className = "friend";
+//         div.innerHTML = bl;
+//         document.body.appendChild(div);
+//         var p = document.createElement("p");
+//         p.className = "para"
+//         document.body.appendChild(p);
     
-    
-    for(i = 0 ;i < friends.length ; i++) ;{
-    console.log(friends[i])
-    for(j = 99; j > 0; j--) {
-        if (j === 2) {
-            console.log(`${j} lines of code in the file, ${j} lines of code; ${friends[i]} strikes one out, clears it all out, ${j - 1} line of code in the file`);
-        }else if(j === 1) {
-            console.log(`${j} lines of code in the file, ${j} lines of code; ${friends[i]} strikes one out, clears it all out, no more lines of code in the file`)
-        }else{
-            console.log(`${j} lines of code in the file, ${j} lines of code; ${friends[i]} strikes one out, clears it all out, ${j - 1} line of code in the file`)
+//     })
+// }
+const friends = [' Joseph ',' Book ',' Tori ','Aj ',' Shock '];
+
+
+    for(i = 0 ;i < friends.length ; i++){
+
+        let name = friends[i];
+        let friendDiv = document.createElement('div');
+        friendDiv.className = 'friend';
+        let friendH3 = document.createElement('h3');
+        friendH3.innerText = `${name.toUpperCase()}:`
+        friendDiv.appendChild(friendH3)
+
+        for(j = 99; j > 0; j--) {
+            let p = document.createElement('p');
+            if (j === 2) {
+            p.innerText = (`${j} lines of code in the file, ${j} lines of code; ${friends[i]} strikes one out, clears it all out, ${j - 1} line of code in the file`);
+            }else if(j === 1) {
+                p.innerText = (`${j} lines of code in the file, ${j} lines of code; ${friends[i]} strikes one out, clears it all out, no more lines of code in the file`)
+            }else{
+                p.innerText = (`${j} lines of code in the file, ${j} lines of code; ${friends[i]} strikes one out, clears it all out, ${j - 1} line of code in the file`)
+            }
+
+            friendDiv.appendChild(p);
         }
+        container.appendChild(friendDiv);
     }
-}
-})
-})
 
+})
+});
