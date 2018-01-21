@@ -1,4 +1,4 @@
-/*
+             hhhz/*
 #### IamBham 99 Lines of Code Pt 2
 
 ## Info
@@ -89,7 +89,7 @@ document.addEventListener('DOMContentLoaded', function(){
 
 
 var friends = [' Joseph ',' Book ',' Tori ','Aj ',' Shock '];
-
+884
 
 document.getElementById("MyBtn").addEventListener("click",() => {
     
