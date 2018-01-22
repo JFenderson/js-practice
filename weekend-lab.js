@@ -32,19 +32,100 @@ let author = ['Jamie Smith','carol Jones','John Doe','Mike Banks','William Lewis
 author.forEach((write) =>{
     for(let i = 0;i < author.length;i++)
         if(author[i] === 'John Doe'){
-            console.log('John Doe Found!' + author[i]);
+            console.log('** ' + author[i]);
         }else{
             console.log(author[i]);
         }
 })
 */
+
+/*NUMBER 6
 let author = ['Jamie Smith','carol Jones','John Doe','Mike Banks','William Lewis','Jackson Howell']
 
-
-    function myFunc() {
+    
         author.reverse();
-        console.log(myFunc)
+
+        console.log(author);
+*/
+let maroon5 = []
+
+var albums = {
+    "cd1": {
+        "artistName":"Kendrick Lamar", 
+        "albumName":"DAMN", 
+        "year": 2017
+    },
+
+    "cd2": {
+        "artistName":"Maroon 5", 
+        "albumName":"Songs About Jane",
+        "year": 2002
+    },
+    "cd3": {
+        "artistName":"Maroon 5",
+        "albumName": "V",
+        "year": 2014
+    },
+    "cd4": {
+        "artistName":"Rick Ross",
+        "albumName":"Rather You Than Me",
+        "year": 2017
+    },
+    "cd5": {
+        "artistName":"Fall Out Boy", 
+        "albumName":"From Under the Cork Tree",
+        "year": 2005
+    },
+    "cd6": {
+        "artistName":"Justice",
+        "albumName": "Woman",
+        "year": 2016
+    },
+    "cd7": {
+        "artistName":"Digitalism",
+        "albumName":"Idealism",
+        "year": 2007
+    },
+    "cd8": {
+        "artistName":"Kanye West", "albumName":"Yeezus",
+        "year": 2013
+    },
+    "cd9": {
+        "artistName":"Nirvana", "albumName":"Nevermind",
+        "year": 1991
+    },
+    "cd10": {
+        "artistName":"Red Hot Chilli Peppers",
+        "albumName":"Blood Sugar Sex Magik",
+        "year": 1991
     }
+}
+
+for(var key in albums) {
+    if(!albums.hasOwnProperty(key)) continue;
+    var cd = albums[key];
+    for(var index in cd){
+        if(!cd.hasOwnProperty(index)) continue;
+        if(cd[index] === "maroon 5"){
+        maroon5.push(cd[index])
+    }
+        
+    console.log(maroon5[]);
+    console.log(cd[index]);
+    }
+}
+// for (var key in albums){
+//     if(albums.hasOwnProperty(key)) {
+//         var obj = albums[key];
+//     }
+//     for(var subkey in albums[key]){
+
+//     }
+// }
+
+//     console.log(albums[key]);
+
+    
     // for(let i = 0;i < author.length;i++)
     //     if(author[i] === 'John Doe'){
     //         console.log('John Doe Found!' + author[i]);
