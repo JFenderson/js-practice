@@ -86,15 +86,9 @@ var wrapper = document.getElementsByTagName("p");
 
 
 document.addEventListener('DOMContentLoaded', function(){
-
-
-<<<<<<< HEAD
 var friends = [' Joseph ',' Book ',' Tori ','Aj ',' Shock '];
-884
-
 document.getElementById("MyBtn").addEventListener("click",() => {
     
-=======
 var x = document.getElementById("myBtn");
 x.addEventListener('click', () =>{
 // x.addEventListener ("click", display);
@@ -109,8 +103,7 @@ x.addEventListener('click', () =>{
 //         var p = document.createElement("p");
 //         p.className = "para"
 //         document.body.appendChild(p);
->>>>>>> 6750315564bb275d59cc9a9c41a203df200c25aa
-    
+
 //     })
 // }
 const friends = [' Joseph ',' Book ',' Tori ','Aj ',' Shock '];

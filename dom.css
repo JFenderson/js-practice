@@ -1,0 +1,16 @@
+.sq-button {
+    font-size: 1.5em;
+    color: rgb(58, 26, 220);
+}
+
+.sq-container {
+    border: 10px solid transparent;
+    padding: 2em;
+    margin: 10px;
+    
+}
+
+p {
+    color: black;
+    text-align: center;
+}

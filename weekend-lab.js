@@ -1,19 +1,19 @@
-/*NUMBER 2
-let stack = ['a','b','c'];
-let sheets = [0];
-for (let i = 1; i < 101;i++){
-    sheets.push(i);
-for(let j = 0;j < stack.length;j++){
-    console.log(stack[j] + sheets[i]);
-    }  
-}
-*/
-/* NUMBER 3
+
+// let stack = ['a','b','c'];
+// let sheets = [0];
+// for (let i = 1; i < 101;i++){
+//     sheets.push(i);
+// for(let j = 0;j < stack.length;j++){
+//     console.log(stack[j] + sheets[i]);
+//     }  
+// }
+
+
 function getRandomInt(max) {
     return Math.floor(Math.random() * Math.floor(max));
 }
-console.log(getRandomInt(10));
-*/
+console.log(getRandomInt(100));
+
 /* NUMBER 4
 for (let i = 0; i < 101;i++){
     if (i % 3 == 0){
@@ -47,6 +47,7 @@ let author = ['Jamie Smith','carol Jones','John Doe','Mike Banks','William Lewis
 
         console.log(author);
 */
+/*
 let maroon5 = []
 
 var albums = {
@@ -101,37 +102,18 @@ var albums = {
     }
 }
 
-for(var key in albums) {
-    if(!albums.hasOwnProperty(key)) continue;
+for(var  in albums) {
+    if(!albums.hasOwnProperty(key));
     var cd = albums[key];
-    for(var index in cd){
-        if(!cd.hasOwnProperty(index)) continue;
-        if(cd[index] === "maroon 5"){
-        maroon5.push(cd[index])
-    }
-        
-    console.log(maroon5[]);
+for(var index in cd){
+    if(!cd.hasOwnProperty(index));
+    if(cd[index] === "maroon 5"){
+    maroon5.push(cd[index])
+}    
+    //console.log(maroon5[]);
     console.log(cd[index]);
     }
 }
-// for (var key in albums){
-//     if(albums.hasOwnProperty(key)) {
-//         var obj = albums[key];
-//     }
-//     for(var subkey in albums[key]){
-
-//     }
-// }
-
-//     console.log(albums[key]);
-
-    
-    // for(let i = 0;i < author.length;i++)
-    //     if(author[i] === 'John Doe'){
-    //         console.log('John Doe Found!' + author[i]);
-    //     }else{
-    //         console.log(author[i]);
-    //     }
-
+*/
 
 
