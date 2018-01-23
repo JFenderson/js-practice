@@ -1,7 +1,5 @@
 
 var counter = 0;
-var x = 0;
-//var randomColor = Math.floor(Math.random()*16777215).toString(16);
 
 document.addEventListener("DOMContentLoaded",() => {
 
@@ -10,22 +8,21 @@ document.addEventListener("DOMContentLoaded",() => {
     document.body.appendChild(applicationArea);
 
         let btn = document.createElement("button");
-        btn.className = 'sq-button';
+        btn.className = 'sqButton';
         btn.innerText = ("add square");
         applicationArea.appendChild(btn);
-
-        
 
     btn.addEventListener("click",function(){
 
     let container = document.createElement("div");
-    container.className = "sq-container";
-    container.id = "sq-id" + counter++;
+    container.className = "sqContainer";
+    container.id = "sqId" + counter++;
     applicationArea.appendChild(container); 
               
     let text = document.createElement("p");
-    text.className = "p-container";
+    text.className = "pContainer";
     text.innerText = counter;
+    text.style.color = "transparent"
     container.appendChild(text);
 
     container.addEventListener("click", function(){
@@ -35,11 +32,35 @@ document.addEventListener("DOMContentLoaded",() => {
             container.style.backgroundColor = 'rgb('+ rgb.join(',') +')';
     })
 
-    for (j = 0;j <container.length;j--);
-    
+    container.addEventListener("mouseover", function(){
+        text.style.color = "black";
+        container.addEventListener("mouseleave", function(){
+            text.style.color = "transparent";
+        })
+     })
 
- 
+
+
+    container.addEventListener("dblclick", function removeElement(appArea,sqId){
+    var myDiv = applicationArea.getElementsByClassName("sqId");
+    var k;
+    for(k = 0;k < myDiv.length;k++){
+        if (myDiv[k] % 2 === 0){
+            alert("even:delete after square");
+        }else if (myDiv[k] % 3 === 0) {
+            alert("odd:delete previous square");
+            // var child = document.getElementById("sqId");
+            // var parent = document.getElementById(appArea);
+            // parent.removeChild(sqId);
+        }else{
+            alert("Child div has already been removed and does not exist");
+            return false;
+        }
+    }
+    })
+
 })
+});
     
 
 
