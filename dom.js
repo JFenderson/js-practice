@@ -51,6 +51,7 @@ document.addEventListener("DOMContentLoaded",() => {
                 console.log(item.target.id);
                 //console.log(document.getElementBy(item.target.id).nextSibling);
                 document.getElementById(item.target.id).nextSibling.remove();
+            
             }else if (item.target.id % 2 !== 0) {
                 console.log("odd");
                 console.log(item.target.id);
