@@ -42,7 +42,7 @@ document.addEventListener("DOMContentLoaded",() => {
 
 
     container.addEventListener("dblclick", function removeElement(appArea,sqId){
-    var myDiv = applicationArea.getElementsByClassName("sqId");
+    var myDiv = applicationArea.getElementsByClassName("sqContainer");
     var k;
     for(k = 0;k < myDiv.length;k++){
         if (myDiv[k] % 2 === 0){
