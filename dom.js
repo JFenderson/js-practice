@@ -1,4 +1,4 @@
-
+let btn;
 var counter = 0;
 
 document.addEventListener("DOMContentLoaded",() => {
@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded",() => {
     applicationArea.id = "appArea";
     document.body.appendChild(applicationArea);
 
-        let btn = document.createElement("button");
+        btn = document.createElement("button");
         btn.className = 'sqButton';
         btn.innerText = ("add square");
         applicationArea.appendChild(btn);

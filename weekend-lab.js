@@ -14,6 +14,8 @@ function getRandomInt(max) {
 }
 console.log(getRandomInt(100));
 
+
+
 /* NUMBER 4
 for (let i = 0; i < 101;i++){
     if (i % 3 == 0){
