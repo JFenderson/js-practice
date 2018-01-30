@@ -132,6 +132,6 @@ const friends = [' Joseph ',' Book ',' Tori ','Aj ',' Shock '];
         }
         container.appendChild(friendDiv);
     }
-
 })
+
 });
